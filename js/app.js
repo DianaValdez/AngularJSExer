@@ -1,19 +1,19 @@
 (function(){
 
 	//
-	var app = angular.module('book', ['ui.router']);
+var app = angular.module('book',['ui-router']);
 
+	
 
-	app.config(Route);
+    app.config(function ($stateProvider) {
 
-    function Route ($stateProvider) {
+      var libros {
 
-      $stateProvider.state('books', {
-              url: '/',
-              templateUrl: 'index1.html',
+              url: 'js/BookStoreApp.js',
+              templateUrl: 'js/BookStoreApp.js/products.name',
               controller: 'BookApp'
-          });
-    }
+          };
+    });
 
 
 })();

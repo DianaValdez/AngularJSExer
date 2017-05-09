@@ -12,6 +12,8 @@
 	<!-- Latest compiled JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="css/style.css">
+	 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+   <script src="//unpkg.com/angular-ui-router/release/angular-ui-router.min.js"></script>
 </head>
 <body>
 
@@ -46,11 +48,11 @@
 							<img ng-src="{{products.images[0].full}}" width="200" height="300" alt="">
 						</div>
 						<div class="col-lg text-responsive">
-							<ui-view> </ui-view> 
-							<h1>{{products.name}}</h1>
-							<h6>{{products.description}}</h6>
-							<h5>{{products.editorial}}</h5>
-							<h4>{{products.author}}</h4>
+							 
+							<h1 >{{products.name}}</h1>
+							<h6 >{{products.description}}</h6>
+							<h5 >{{products.editorial}}</h5>
+							<h4 >{{products.author}}</h4>
 						</div>	
 
 					</div>
@@ -60,10 +62,10 @@
 		</ul>
 
 	</div>
-	
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<ui-view> </ui-view>
 	<script src="js/app.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.min.js"></script>  
+	<script src="js/BookStoreApp.js"></script>
+	 
 	
 </body>
 </html>
